@@ -1,0 +1,805 @@
+/* ------------------------------Обнуление---------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ :focus,
+ :active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+/*---------------------------Конец обнуления --------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/* --------------- header ----------------*/
+
+.header {
+    padding-top: 44px;
+    height: 124px;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header__logo {}
+
+.header_search {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 690px;
+    flex-grow: 1;
+    height: 40px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    font-size: 16px;
+    padding-left: 34px;
+    background-image: url(../img/home_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 11px;
+}
+
+.header_btn_wrapper {}
+
+.btn {
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    color: #595959;
+    background: #FFFFFF;
+}
+
+.header_btn_enter {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #FFFFFF;
+}
+
+.btn_icon {
+    margin-top: 6px;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    padding-bottom: 60px;
+}
+
+
+/* --------------- Section 1 ----------------*/
+
+.section_wrapper {
+    background: #FFF1B8;
+    background-image: url(../img/pizza.png);
+    background-position: top -30px right -139px;
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 70px;
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+}
+
+.text_wrapper {
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 46px;
+    color: #302C34;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+}
+
+
+/* --------------- Рестораны ----------------*/
+
+.restoran_title--wrapper {
+    margin-top: 55px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restoran_title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+}
+
+.restoran_search {
+    padding-left: 33px;
+    width: 306px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    background-image: url(../img/search_icon.png);
+    background-position: 9px 8px;
+    background-repeat: no-repeat;
+}
+
+.card_link {
+    display: block;
+}
+
+.restoran_cards--row1,
+.restoran_cards--row2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.restoran_card1,
+.restoran_card2,
+.restoran_card3,
+.restoran_card4,
+.restoran_card5,
+.restoran_card6 {
+    width: 385px;
+    height: 380px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.restoran_card1--img {
+    background-image: url(../img/restoran1.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 385px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.restoran_card--title--wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 23px;
+    margin-right: 23px;
+    margin-bottom: 25px;
+}
+
+.restoran_card--title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+.restoran_card--time {
+    background: #262626;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.restoran_card--rate {
+    margin-left: 23px;
+    margin-right: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFC107;
+    float: left;
+}
+
+.fa {}
+
+.fa-star {}
+
+.restoran_card--price {
+    font-size: 18px;
+    color: #8C8C8C;
+}
+
+.fa-circle {
+    font-size: 5px;
+    vertical-align: 5px;
+    f
+}
+
+.restoran_card2--img {
+    background-image: url(../img/restoran2.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 385px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.restoran_card3--img {
+    background-image: url(../img/restoran3.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 385px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.restoran_card4--img {
+    background-image: url(../img/restoran4.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 385px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.restoran_card5--img {
+    background-image: url(../img/restoran5.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 385px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.restoran_card6--img {
+    background-image: url(../img/restoran6.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 385px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+
+/* --------------- Footer ----------------*/
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.footer_logo {
+    margin-top: 52px;
+    margin-right: 15px;
+}
+
+.footer__nav {
+    margin-top: 60px;
+    font-size: 18px;
+    color: #595959;
+    flex-grow: 1;
+}
+
+.footer__nav a {
+    font-size: 18px;
+    color: #595959;
+    margin-left: 17px;
+}
+
+.social_wrapper {
+    margin-top: 58px;
+}
+
+.social_wrapper img {
+    margin-left: 10px;
+}
+
+
+/* --------------- Тануки ----------------*/
+
+.tanuki_title--wrapper {
+    display: flex;
+    line-height: 40px;
+}
+
+.tanuki_title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.tanuki_cards--row1,
+.tanuki_cards--row2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.tanuki_card1 {
+    width: 385px;
+    height: 415px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.tanuki_card1--img {
+    background-image: url(../img/tanuki1.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 210px;
+    margin-bottom: 25px;
+}
+
+.tanuki_card-title {
+    font-size: 24px;
+    margin: 0px 24px 10px;
+}
+
+.tanuki_card_subtitle {
+    font-size: 18px;
+    color: #8C8C8C;
+    margin: 0px 24px 34px;
+}
+
+.tanuki_card_footer {
+    display: flex;
+    padding: 0 24px;
+}
+
+.tanuki_card_footer--btn-blue {
+    background: #1890FF;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+}
+
+.tanuki_card_footer--btn-blue a {
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.tanuki_card_icon {
+    margin-top: 5px;
+}
+
+.tanuki_card_footer--price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    margin-left: 60px;
+}
+
+.tanuki_card2--img {
+    background-image: url(../img/tanuki2.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 210px;
+    margin-bottom: 25px;
+}
+
+.tanuki_card3--img {
+    background-image: url(../img/tanuki3.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 210px;
+    margin-bottom: 25px;
+}
+
+.tanuki_card4--img {
+    background-image: url(../img/tanuki4.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 210px;
+    margin-bottom: 25px;
+}
+
+.tanuki_card5--img {
+    background-image: url(../img/tanuki5.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 210px;
+    margin-bottom: 25px;
+}
+
+.tanuki_card6--img {
+    background-image: url(../img/tanuki6.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 385px;
+    height: 210px;
+    margin-bottom: 25px;
+}
+
+
+/*--------------Модальное окно---------------------*/
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.is-open {
+    display: flex;
+}
+
+.modal-dialog {
+    max-width: 780px;
+    width: 95%;
+    /* min-height: 550px; */
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px 45px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.close {
+    font-size: 36px;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-body {
+    margin-bottom: 52px;
+}
+
+.food-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 15px;
+}
+
+.food-name {
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.food-price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    margin-left: auto;
+    margin-right: 47px;
+}
+
+.food-counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter-button {
+    background: #FFFFFF;
+    border: 1px solid #40A9FF;
+    border-radius: 2px;
+    width: 39px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: #40A9FF;
+}
+
+.counter {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-pricetag {
+    background: #262626;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+    padding: 15px 20px;
+}
+
+
+/*--------------Адаптив---------------------*/
+
+@media (max-width: 1190px) {
+    .restoran_cards--row1 {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 920px) {
+    .section_wrapper {
+        padding-left: 30px;
+    }
+    .text_wrapper {
+        max-width: 330px;
+    }
+    .title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+    .subtitle {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 820px) {
+    .section_wrapper {
+        background-position: top -30px right -139px;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+    .restoran_cards--row1 {
+        justify-content: center;
+    }
+    .restoran_card1,
+    .restoran_card2,
+    .restoran_card3,
+    .restoran_card4,
+    .restoran_card5,
+    .restoran_card6 {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header {
+        padding-top: 20px;
+    }
+    .header_wrapper {
+        flex-wrap: wrap;
+    }
+    .header_search {
+        order: 5;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 500px;
+    }
+    .footer__nav {
+        margin-top: 20px;
+    }
+    .footer__nav a {
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    .footer_logo {
+        margin-top: 20px;
+    }
+    .social_wrapper {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .section_wrapper {
+        background-image: none;
+        height: 200px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    .subtitle {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .restoran_title {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    .header_search {
+        flex: 1;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 440px) {
+    .restoran_cards--row1 {
+        width: 100%;
+    }
+    .restoran_card1,
+    .restoran_card2,
+    .restoran_card3,
+    .restoran_card4,
+    .restoran_card5,
+    .restoran_card6 {
+        width: 100%;
+        overflow: hidden;
+    }
+    .btn span {
+        display: none;
+    }
+    .restoran_search {
+        flex: 1;
+        overflow: hidden;
+    }
+    .social_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .social_wrapper a {
+        margin-bottom: 10px;
+    }
+    .tanuki_card--rate,
+    .tanuki_card--price {
+        display: none;
+    }
+    .tanuki_card_footer--price {
+        margin-left: 15px;
+    }
+    .tanuki_card1--img,
+    .tanuki_card2--img,
+    .tanuki_card3--img,
+    .tanuki_card4--img,
+    .tanuki_card5--img,
+    .tanuki_card6--img {
+        background-position: 30% center;
+        background-repeat: no-repeat;
+        background-size: 70% 70%;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    .subtitle {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
